@@ -6,6 +6,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hbb/common.dart';
+import 'package:flutter_hbb/nextcore/brand.dart';
 import 'package:flutter_hbb/common/widgets/animated_rotation_widget.dart';
 import 'package:flutter_hbb/common/widgets/custom_password.dart';
 import 'package:flutter_hbb/consts.dart';
@@ -239,7 +240,9 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                           contentPadding: EdgeInsets.only(top: 10, bottom: 10),
                         ),
                         style: TextStyle(
-                          fontSize: 22,
+                          fontFamily: NcBrand.idFontFamily,
+                          fontWeight: NcBrand.idFontWeight,
+                          fontSize: NcBrand.idFontSize,
                         ),
                       ).workaroundFreezeLinuxMint(),
                     ),
@@ -336,7 +339,10 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                               contentPadding:
                                   EdgeInsets.only(top: 14, bottom: 10),
                             ),
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(
+                                fontFamily: NcBrand.idFontFamily,
+                                fontWeight: NcBrand.idFontWeight,
+                                fontSize: NcBrand.passwordFontSize),
                           ).workaroundFreezeLinuxMint(),
                         ),
                       ),
@@ -351,7 +357,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                                   Icons.refresh,
                                   color: refreshHover.value
                                       ? textColor
-                                      : Color(0xFFDDDDDD),
+                                      : NcBrand.passwordIcons,
                                   size: 22,
                                 ))),
                           ),
@@ -366,7 +372,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                                 Icons.edit,
                                 color: editHover.value
                                     ? textColor
-                                    : Color(0xFFDDDDDD),
+                                    : NcBrand.passwordIcons,
                                 size: 22,
                               ).marginOnly(right: 8, top: 4),
                             ),
@@ -612,8 +618,8 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [
-                  Color.fromARGB(255, 226, 66, 188),
-                  Color.fromARGB(255, 244, 114, 124),
+                  NcBrand.statusStart,
+                  NcBrand.statusEnd,
                 ],
               )),
               padding: EdgeInsets.all(20),
