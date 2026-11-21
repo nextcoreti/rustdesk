@@ -25,6 +25,14 @@ class NcBrand {
   static const Color warn = Color(0xFFF08A3C); // service stopped + peer offline
   static const Color online = Color(0xFF3FB950); // peer online dot
 
+  // Connection-manager window (what the customer sees when someone connects).
+  // Header gradient follows the accent, so RDGEN's Accent Color recolors it too.
+  static Color get cmHeaderStart => Color.lerp(accent, Colors.white, 0.35)!;
+  static const Color cmHeaderEnd = accent;
+  // Big line in that header ("Suporte NextCore TI"); the technician's name goes
+  // smaller below it. Empty = upstream layout. RDGEN fills it per build.
+  static const String supportName = '';
+
   // ---- light theme ----
   static const Color lightBg1 = Color(0xFFFFFFFF); // scaffold (right pane)
   static const Color lightBg2 = Color(0xFFF4F0F9); // left pane, peer cards

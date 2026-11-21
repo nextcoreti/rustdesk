@@ -29,6 +29,7 @@ Upstream files touched (they only point at `NcBrand`):
 | `flutter/lib/consts.dart` | `kColorWarn` (service stopped + peer offline) |
 | `flutter/lib/common/widgets/peer_card.dart` | peer online dot |
 | `flutter/lib/common/widgets/peer_tab_page.dart` | tabs show their name instead of an icon |
+| `flutter/lib/desktop/pages/server_page.dart` | connection window header: accent gradient; `NcBrand.supportName` in the big line, technician below |
 | `src/lang/pt_BR.rs` | home texts and short tab names |
 | `flutter/pubspec.yaml` + `flutter/assets/fonts/` | Inter SemiBold (SIL OFL 1.1, license in `Inter-OFL.txt`) |
 
