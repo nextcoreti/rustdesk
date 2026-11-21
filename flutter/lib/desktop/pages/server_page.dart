@@ -498,7 +498,7 @@ class _CmHeaderState extends State<_CmHeader>
                   ),
                   Text(
                     client.name,
-                    style: TextStyle(color: Colors.white, fontSize: 13),
+                    style: TextStyle(color: Colors.white70, fontSize: 11),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
