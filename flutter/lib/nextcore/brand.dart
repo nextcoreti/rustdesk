@@ -30,7 +30,7 @@ class NcBrand {
   static const Color lightBg2 = Color(0xFFF4F0F9); // left pane, peer cards
   static const Color lightText = Color(0xFF1D1A22);
   static const Color lightDivider = Color(0xFFE7E0F0);
-  static const Color lightTabSel = Color(0xFF7B1FA2);
+  static const Color lightTabSel = accent; // follows the RDGEN accent override
   static const Color lightTabUn = Color(0xFF7A7385);
   static const Color lightHover = Color(0xFFEDE5F7);
   static const Color lightHint = Color(0xFFA097AD);
