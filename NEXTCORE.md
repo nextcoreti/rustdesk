@@ -5,6 +5,13 @@ It is built by [RDGEN](https://github.com/nextcoreti/rdgen) when a `*-nextcore`
 version is chosen in the panel. RustDesk is AGPL-3.0; these changes are public
 for that reason.
 
+## Server
+
+NextCore will **never** use RustDesk Server Pro (decision 0001 in `nextcoreti/rdgen`,
+`docs/decisions/0001-sem-rustdesk-server-pro.md`). Clients built from this fork run
+against **NCDesk**, NextCore's own open-source RustDesk server. Do not add anything that
+depends on a Pro-only feature (official web client, Strategies, Pro console/API).
+
 ## Branches
 
 - `nextcore/<version>` — the official tag `<version>` plus the NextCore commits.
